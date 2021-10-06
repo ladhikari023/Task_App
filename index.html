@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>MyCrashCourse</title>
+</head>
+<body>
+    <section class="navbar">
+        <div class="container">
+            <a href="" class="logo">Remember<span>That</span></a>
+            <img class="mobile-menu" id="mobile-cta" src="images/menu-bar.svg" alt="">
+            <nav>
+                <img src="images/menu-exit.svg" id="mobile-exit" alt="" class="mobile-menu-exit">
+                <ul class="primary-nav">
+                    <li><a href="#" class="current">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" class="gopremium-cta">GoPremium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="container">
+        <div class="left-column">
+            <p class="subhead">It's nitty &amp; Gritty</p>
+            <h1>A Task App That Doesn't Stink</h1>
+            <div class="hero-cta">
+                <a href="#" class="primary-cta">Try for free</a>
+                    <a class="watch-video-cta" href="#">
+                        <img src="images/watch-video.svg" alt="">Watch a Video
+                    </a>
+            </div>
+        </div>
+            <img class="hero-img" src="images/paper-notes.svg" alt="Image here">
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <!-- <img src="" alt="Here is dots"> -->
+            <ul class="features-list">
+                <li>Sssup Brother</li>
+                <li>Fanatic Boys live in Town</li>
+                <li>Here is my beloved</li>
+                <li>Whay are you such an asshole</li>
+                <li>Goddamn bro</li>
+                <li>Damn</li>
+                <li>Other awesome features</li>
+            </ul>
+            <img src="images/feature-image.svg" alt="Here is a picture">
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <ul class="qutoe-items">
+                <li class="quote-items-list">
+                    <img src="images/man.svg" alt="">
+                    <blockquote>Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</blockquote>
+                    <cite>-Laxman</cite>
+                </li>
+                <li class="quote-items-list">
+                    <img src="images/man.svg" alt="Img here">
+                    <blockquote>Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</blockquote>
+                    <cite>-Bob</cite>
+                </li>
+                <li class="quote-items-list">
+                    <img src="images/man.svg" alt="Img here">
+                    <blockquote>Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</blockquote>
+                    <cite>-Albert</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="left-column">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" class="name" id="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="message"></textarea>
+
+                    <input type="submit" value="Send message">
+                </form>
+            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886177.758840069!2d-95.40129145!3d29.817177950000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1620976176661!5m2!1sen!2sus" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+                    nav = document.querySelector('nav')
+                    mobileBtnExit = document.getElementById('mobile-exit');
+        
+        mobileBtn.addEventListener('click',() => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click',() => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+    </script>
+</body>
+</html>
